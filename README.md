@@ -17,7 +17,8 @@ hirakuさん作成のchrome拡張、ユーザースクリプトです。
 [ユーザースクリプト](https://greasyfork.org/ja/scripts/455719-ahc-mintoku-user-script)
 
 ## 問題解説編
-1/13(金)19:00公開
+[問題解説記事(β)](problem/problem.md)
+まだ数式がバグってるのですが、何言ってるかは伝わるはず！あとで直します！
 
 
 ## 実装編
