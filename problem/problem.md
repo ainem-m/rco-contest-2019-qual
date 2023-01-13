@@ -51,7 +51,7 @@
 <span style="background-color:white">
 <font color ="white">今回、収穫不能な区画を収穫しようとしても`WA`にはなりません。そして、品質が$1$の野菜は単体でも収穫できます。ということは…</font></span>
 
-ainemの提出↓
+ainemの提出↓  
 [python](https://atcoder.jp/contests/rco-contest-2019-qual/submissions/37918051)
 [rust](https://atcoder.jp/contests/rco-contest-2019-qual/submissions/37918162)
 
