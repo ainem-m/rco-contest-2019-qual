@@ -59,7 +59,7 @@
 
 
 <img src="./team6.png" height="100">
-<strong>チーム6</strong>
+<strong>輝かしい未来を目指す不屈の戦い人</strong>
 
 
 
