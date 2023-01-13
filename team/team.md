@@ -21,7 +21,7 @@
 | [yuuki_n](https://atcoder.jp/users/yuuki_n)                 | yuuki           | java        |
 
 
-<img src="./team3.png" height="100">
+<img src="./team3.jpg" height="100">
 <strong>>euphonic</strong>
 
 
@@ -33,7 +33,7 @@
 | [cplusplusonly](https://atcoder.jp/users/cplusplusonly) | cplusplusonly                  | cpp         |
 | [otsuneko](https://atcoder.jp/users/otsuneko)           | otsuneko                       | rust python |
 
-<img src="./team4.png" height="100">
+<img src="./team4.jpg" height="100">
 <strong>霧ヶ峰めっちゃ良い買い物しました！！！！</strong>
 
 
@@ -45,7 +45,7 @@
 | [hal0taso](https://atcoder.jp/users/hal0taso)       | __ukun     | cpp python        |
 | [tnodino](https://atcoder.jp/users/tnodino)         | Natno      | python            |
 
-<img src="./team5.png" height="100">
+<img src="./team5.jpg" height="100">
 <strong>benchmark</strong>
 
 
