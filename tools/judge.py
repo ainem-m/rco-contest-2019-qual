@@ -115,7 +115,7 @@ def calcScore(testcase, output) -> int:
 
 if __name__ == "__main__":
     args = sys.argv[1:]
-    if len(args) < 2:
+    if len(args) != 2:
         exit("usage: py judge.py input_file_path output_file_path")
     inputFile = Path(args[0])
     outputFile = Path(args[1])
