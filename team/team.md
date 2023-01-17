@@ -9,7 +9,7 @@
 | [gunmaneko](https://atcoder.jp/users/gunmaneko)   | aplaas   | cpp      |
 
 
-<img src="./team2.jpg" height="100">
+<img src="./team2.jpg" width="100">
 <strong>逆襲のバベルクライマーズ</strong>
 
 
