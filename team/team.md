@@ -58,7 +58,7 @@
 | [brthyyjp](https://atcoder.jp/users/brthyyjp)         | brthyjp  | python          |
 
 
-<img src="./team6.png" height="100">
+<img src="./team6.jpg" height="100">
 <strong>輝かしい未来を目指す不屈の戦い人</strong>
 
 
@@ -70,7 +70,7 @@
 | [keroru](https://atcoder.jp/users/keroru)     | keroru   | python     |
 | [jaku](https://atcoder.jp/users/jaku)         | jakusw   | python     |
 
-<img src="./team7.png" height="100">
+<img src="./team7.jpg" height="100">
 <strong>山走暁飛</strong>
 
 
