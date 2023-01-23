@@ -11,9 +11,9 @@ python3 make_seeds.py <n> >seeds.txt
 """
 
 # ここを変更する
-SEED = 202103125
+SEED = 202301230932  # システス取り組み始めた時刻
 # 好みに応じて変更
-MAX = 10**9
+MAX = 1 << 63
 
 seed(SEED)
 n = int(sys.argv[1])
