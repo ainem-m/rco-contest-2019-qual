@@ -1,10 +1,12 @@
 import subprocess
 from concurrent.futures import ThreadPoolExecutor
+from concurrent.futures import ProcessPoolExecutor
 
 
 def run(i: int):
-    subprocess.run(
-        f"java Generator -{seeds[i]}  > ../in/{i:04d}.txt", shell=True, stdout=subprocess.PIPE)
+    with open(f"../in/{i:04d}.txt", mode="w") as f:
+        subprocess.Popen(
+            f"java Generator -{seeds[i]}", stdout=f, shell=True)
     # stdout=の指定がないとターミナルにリダイレクトとは別に結果が出力される（なぜ？）
 
 
@@ -13,8 +15,9 @@ with open("../seeds.txt") as f:
     seeds = list(f.readlines())
 
 with ThreadPoolExecutor() as executor:
-
-    _ = executor.map(run, range(1000))
+    # for i in range(1000):
+    #    executor.submit(run(i))
+    future = executor.map(run, range(1000))
 
 
 print("fin")
