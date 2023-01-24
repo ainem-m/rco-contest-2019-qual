@@ -4,7 +4,7 @@ from concurrent.futures import ThreadPoolExecutor
 
 # 設定
 
-NUM_OF_TEAMS = 1
+NUM_OF_TEAMS = 8
 NUM_OF_CASES = 1000
 
 max_process = 8
@@ -33,12 +33,12 @@ for team_num in range(NUM_OF_TEAMS):
     filename = Path(filename)
     command = ""
     if lang == "Python":
-        command = f"pypy {filename}"
+        command = f"python3 {filename}"
     elif lang == "Rust":
         subprocess.run(
-            f"cargo build --bin {filename.stem()} --release 2>dev/null", shell=True, cwd=CURRENT_DIR)
-        command = str(CURRENT_DIR.parent()) + \
-            f"target/release/{filename.stem()}"
+            f"cargo build --bin {filename.stem} --release 2>/dev/null", shell=True, cwd=CURRENT_DIR)
+        command = str(CURRENT_DIR.parents[0]) + \
+            f"/target/release/{filename.stem}"
     elif lang == "C++":
         subprocess.run(
             f"g++ -std=gnu++17 -O2 -o ./{team}.out ./{filename} 2>/dev/null", shell=True, cwd=CURRENT_DIR
@@ -47,11 +47,11 @@ for team_num in range(NUM_OF_TEAMS):
     elif lang == "Crystal":
         subprocess.run(
             f"crystal build {filename} --release 2>/dev/null", shell=True, cwd=CURRENT_DIR)
-        command = "./" + {filename.stem()}
+        command = "./" + {filename.stem}
     elif lang == "Java":
-        subprocess.run(f"javac ./{filename.stem()}",
+        subprocess.run(f"javac ./{filename}",
                        shell=True, cwd=CURRENT_DIR)
-        command = f"java -Xss1024M {filename.stem()}"
+        command = f"java {filename}"
 
     # システムテスト実行
     for i in range(NUM_OF_CASES):
@@ -66,7 +66,6 @@ for team_num in range(NUM_OF_TEAMS):
                 subproc.wait()
                 # time.sleep(0.1)
         proc_list = []
-    print()
 
     sum_score = 0
 
@@ -81,9 +80,9 @@ for team_num in range(NUM_OF_TEAMS):
         score = int(result.stdout.split(":")[-1])
         sum_score += score
         score_list[team_num][i] = score
-        print(f"{team} {i:04d} score: {score}")
+        print(f"\r{team} {i:04d} score: {score}", end="")
     score_list[team_num].append(sum_score)
-    print(f"{team} score: {sum_score}")
+    print(f"\r     {team} score: {sum_score}")
 
 result_list = open("result.csv", "w")
 print("team, ", end="", file=result_list)

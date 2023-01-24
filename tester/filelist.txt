@@ -1,1 +1,8 @@
-solve.py Python test
+team1.py Python team1
+Main.java Java team2
+team3.cpp C++ team3
+team4.rs Rust team4
+team5.rs Rust team5
+team6.cpp C++ team6
+team7.cpp C++ team7
+ainem.rs Rust ainem
